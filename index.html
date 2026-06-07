@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angelica H. Hugo — Portfolio</title>
+    <meta
+      name="description"
+      content="Computer Engineering student & Data Scientist specializing in data analytics, machine learning, and software development."
+    />
+    <meta property="og:title" content="Angelica H. Hugo — Portfolio" />
+    <meta
+      property="og:description"
+      content="Computer Engineering student passionate about data-driven solutions and AI."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+ 
+  <body>
+    <!-- DYNAMIC ISLAND NAV -->
+    <div class="nav-wrap">
+      <nav id="main-nav">
+        <a href="#hero" class="nav-logo">AHH</a>
+        <div class="nav-divider"></div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-divider"></div>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle light/dark mode"
+        >
+          <svg
+            class="icon-moon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg
+            class="icon-sun"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+        <a href="mailto:angelicahhugo@gmail.com" class="nav-cta">Hire me ↗</a>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-glow2"></div>
+      <div class="container hero-content">
+        <div class="hero-split">
+          <!-- LEFT: Text -->
+          <div>
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              Open to Work · Quezon Province, Philippines
+            </div>
+            <h1 class="hero-name">
+              Angelica<br />
+              <span class="accent">H. Hugo</span><span class="dim">.</span>
+            </h1>
+            <p class="hero-desc">
+              Computer Engineer specializing in AI, Machine Learning, and Data
+              Science. Experienced in developing data-driven solutions,
+              intelligent applications, and software systems that transform
+              complex data into actionable insights.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Get in touch →</a>
+              <a href="#projects" class="btn btn-ghost">View projects</a>
+              <a
+                href="https://github.com/ixahh"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-ghost"
+                >GitHub ↗</a
+              >
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="stat-num">
+                  <span class="count" data-target="95">0</span
+                  ><span class="accent">%</span>
+                </div>
+                <div class="stat-lbl">ML accuracy</div>
+              </div>
+              <div class="hero-stat">
+                <div class="stat-num">
+                  <span class="count" data-target="500">0</span
+                  ><span class="accent">+</span>
+                </div>
+                <div class="stat-lbl">users reached</div>
+              </div>
+              <div class="hero-stat">
+                <div class="stat-num">
+                  <span class="count" data-target="20">0</span
+                  ><span class="accent">+</span>
+                </div>
+                <div class="stat-lbl">certifications</div>
+              </div>
+              <div class="hero-stat">
+                <div class="stat-num">
+                  <span class="count" data-target="1000">0</span
+                  ><span class="accent">+</span>
+                </div>
+                <div class="stat-lbl">students engaged</div>
+              </div>
+            </div>
+          </div>
+          <!-- RIGHT: Photo -->
+          <div class="hero-photo-wrap">
+            <div class="hero-photo-outer">
+              <div class="hero-dot-grid"></div>
+              <div class="hero-photo-frame">
+                <!-- Replace "your-photo.jpg" with your actual photo file -->
+                <img
+                  src="geli.jpg"
+                  alt="Angelica H. Hugo"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '<div class=\'hero-photo-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><circle cx=\'12\' cy=\'8\' r=\'4\'/>  <path d=\'M4 20c0-4 3.6-7 8-7s8 3 8 7\'/></svg><span>ADD YOUR PHOTO</span></div>'
+                  "
+                />
+              </div>
+              <div class="hero-photo-ring"></div>
+              <div class="hero-photo-badge">
+                <span class="hero-photo-badge-dot"></span>
+                <span class="hero-photo-badge-text">BS CpE · SLSU · 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+      <div class="marquee-track" id="marquee">
+        <span class="marquee-item"
+          >Python<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Pandas<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Machine Learning<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >FlutterFlow<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Firebase<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Jupyter<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Git / GitHub<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item">SQL<span class="marquee-dot"></span></span>
+        <span class="marquee-item"
+          >Power BI<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >HTML &amp; CSS<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item">Java<span class="marquee-dot"></span></span>
+        <span class="marquee-item">C++<span class="marquee-dot"></span></span>
+        <span class="marquee-item"
+          >Agile / Scrum<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Data Visualization<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Google Colab<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >MCP Framework<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Python<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Pandas<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Machine Learning<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >FlutterFlow<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Firebase<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Jupyter<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Git / GitHub<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item">SQL<span class="marquee-dot"></span></span>
+        <span class="marquee-item"
+          >Power BI<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >HTML &amp; CSS<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item">Java<span class="marquee-dot"></span></span>
+        <span class="marquee-item">C++<span class="marquee-dot"></span></span>
+        <span class="marquee-item"
+          >Agile / Scrum<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Data Visualization<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >Google Colab<span class="marquee-dot"></span
+        ></span>
+        <span class="marquee-item"
+          >MCP Framework<span class="marquee-dot"></span
+        ></span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: 2.5rem">
+          <p class="section-eyebrow">About</p>
+          <h2 class="section-title">
+            Data-driven Engineer. Software Developer.<br />Technical Leader.
+          </h2>
+        </div>
+        <div class="about-bento reveal">
+          <div class="bento-card span2">
+            <p class="bento-label">Summary</p>
+            <p>
+              Angelica "Geli" is a graduating Computer Engineering student at Southern Luzon State University with experience in Artificial Intelligence, Machine Learning, Data Science, and Software Development. During her internship at Open iT Asia Inc., she collaborated with cross-functional teams to develop AI-powered analytics solutions, design data processing workflows, and improve system reliability through testing and quality assurance.
+              <br></br>
+              Beyond technical projects, she has led student organizations, organized engineering events, and contributed to initiatives that support academic and professional growth. She is driven by a passion for transforming complex problems into practical, technology-driven solutions that create measurable impact.              <br></br>
+          </div>
+          <div class="bento-card">
+            <p class="bento-label">Details</p>
+            <div class="detail-list">
+              <div class="detail-row">
+                <span class="dk">Location</span
+                ><span class="dv">Quezon Province, Philippines</span>
+              </div>
+              <div class="detail-row">
+                <span class="dk">Degree</span
+                ><span class="dv"
+                  >Bachelor of Science in Computer Engineering</span
+                >
+              </div>
+              <div class="detail-row">
+                <span class="dk">University</span
+                ><span class="dv">SLSU Main Campus</span>
+              </div>
+              <div class="detail-row">
+                <span class="dk">Graduation</span
+                ><span class="dv">Expected June 2026</span>
+              </div>
+              <div class="detail-row">
+                <span class="dk">LinkedIn</span
+                ><span class="dv"
+                  ><a
+                    href="https://linkedin.com/in/angelicahhugo"
+                    target="_blank"
+                    >angelicahhugo ↗</a
+                  ></span
+                >
+              </div>
+              <div class="detail-row">
+                <span class="dk">GitHub</span
+                ><span class="dv"
+                  ><a href="https://github.com/ixahh" target="_blank"
+                    >ixahh ↗</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="bento-card">
+            <p class="bento-label">Scholarships &amp; Awards</p>
+            <span class="award-pill">◆ DOST Scholar · RA 7687</span>
+            <span class="award-pill">◆ SM Scholarship Qualifier</span>
+            <p
+              style="
+                margin-top: 1rem;
+                font-size: 13px;
+                color: var(--text2);
+                font-weight: 300;
+                line-height: 1.7;
+              "
+            >
+             Awarded under the DOST-SEI RA 7687 program for high-achieving STEM students from low-income socio-economic but deserving backgrounds. Passed the SM Foundation Scholarship selection process based on academic excellence and leadership potential.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: 2.5rem">
+          <p class="section-eyebrow">Skills</p>
+          <h2 class="section-title">Tech Stack</h2>
+        </div>
+        <div class="skills-bento reveal">
+          <div class="skill-card">
+            <p class="skill-card-title">Languages</p>
+            <div class="tag-wrap">
+              <span class="stag">Python</span>
+              <span class="stag">C++</span>
+              <span class="stag">Java</span>
+              <span class="stag">JavaScript</span>
+              <span class="stag">PHP</span>
+              <span class="stag">HTML</span>
+              <span class="stag">CSS</span>
+              <span class="stag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <p class="skill-card-title">Web &amp; App</p>
+            <div class="tag-wrap">
+              <span class="stag">HTML</span>
+              <span class="stag">CSS</span>
+              <span class="stag">FlutterFlow</span>
+              <span class="stag">Flutter</span>
+              <span class="stag">Firebase</span>
+              <span class="stag">Android Studio</span>
+              <span class="stag">Android Development</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <p class="skill-card-title">Data &amp; ML</p>
+            <div class="tag-wrap">
+              <span class="stag">Pandas</span>
+              <span class="stag">Seaborn</span>
+              <span class="stag">Jupyter</span>
+              <span class="stag">Power BI</span>
+              <span class="stag">Google Colab</span>
+              <span class="stag">Excel</span>
+              <span class="stag">Data Analysis</span>
+              <span class="stag">Data Visualization</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <p class="skill-card-title">Tools &amp; Methods</p>
+            <div class="tag-wrap">
+              <span class="stag">Git</span>
+              <span class="stag">GitHub</span>
+              <span class="stag">Agile</span>
+              <span class="stag">Scrum</span>
+              <span class="stag">OOP</span>
+              <span class="stag">VS Code</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <p class="skill-card-title">Design</p>
+            <div class="tag-wrap">
+              <span class="stag">Canva</span>
+              <span class="stag">Figma</span>
+              <span class="stag">Photoshop</span>
+              <span class="stag">Adobe Illustrator</span>
+              <span class="stag">Layout Design</span>
+              <span class="stag">UI/UX Design</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <p class="skill-card-title">Systems</p>
+            <div class="tag-wrap">
+              <span class="stag">AlmaLinux</span>
+              <span class="stag">Linux</span>
+              <span class="stag">Windows</span>
+              <span class="stag">Digital Logic</span>
+              <span class="stag">Circuit Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: 2.5rem">
+          <p class="section-eyebrow">Experience</p>
+          <h2 class="section-title">Where I've Worked</h2>
+        </div>
+        <div class="exp-list reveal">
+          <div class="exp-item">
+            <div class="exp-date">Jan 2026<br />— May 2026</div>
+            <div>
+              <p class="exp-role">Academic Researcher</p>
+              <p class="exp-org">SLSU CpE Department — Deep-Learning Drowning Detection System</p>
+              <ul class="exp-bullets">
+                <li>
+                  Processed and analyzed multi-source data (RFID, Wi-Fi CSI, vision signals) to support real-time detection logic.
+                </li>
+                <li>
+                  Designed data workflows to improve consistency and reliability of classification outputs.
+                </li>
+                <li>
+                  Evaluated system performance through testing and validation in a real-world environment.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-date">Jun 2025<br />— Aug 2025</div>
+            <div>
+              <p class="exp-role">Data Scientist Intern</p>
+              <p class="exp-org">Open iT Asia Inc. — Philippine Branch</p>
+              <ul class="exp-bullets">
+                <li>
+                  Collaborated within a cross-functional engineering team
+                  (full-stack engineer, prompt engineer, and python developer) to deploy an
+                  AI-powered business intelligence system.
+                </li>
+                <li>
+                  Structured and optimized backend data workflows using Python
+                  and Pandas to align critical system components and maintain
+                  data integrity.
+                </li>
+                <li>
+                  Implemented correlation detection algorithms and regression
+                  models to support and optimize predictive insights of AI Chatbot.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-date">Nov 2024<br />— Jun 2025</div>
+            <div>
+              <p class="exp-role">Machine Learning & Front End Developer</p>
+              <p class="exp-org">APPCON 2024 — Buoy (AI Phishing Detector)</p>
+              <ul class="exp-bullets">
+                <li>
+                  Developed and fine-tuned ML models for phishing detection,
+                  achieving 95% accuracy in early-stage testing.
+                </li>
+                <li>
+                  Conducted data preprocessing and feature engineering to
+                  improve model performance and reliability.
+                </li>
+                <li>
+                  Built responsive frontend interface for thousands of users.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: 2.5rem">
+          <p class="section-eyebrow">Projects</p>
+          <h2 class="section-title">What I've Built</h2>
+        </div>
+        <div class="projects-grid reveal">
+          <div class="project-card">
+            <div class="proj-top">
+              <p class="proj-name">Deep Learning–Enabled Drowning Detection System with Automated Warning Lights and Buzzer Alarm</p>
+              <div class="proj-links">
+                <!-- <a
+                  href="https://github.com/ixahh/Dengue-Data-PH-Regional-Analysis"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub ↗</a
+                > -->
+              </div>
+            </div>
+            <p class="proj-desc">
+              A real-time AI safety system that uses deep learning–based computer vision to detect potential drowning incidents in water environments. It analyzes live video to identify abnormal behavior such as prolonged submersion or loss of swimming activity. When a risk is detected, the system automatically activates warning lights and a buzzer alarm to alert nearby responders. Built to enhance water safety through early detection and rapid response using AI and embedded systems.
+            </p>
+            <div class="proj-tags">
+              <span class="ptag">Deep Learning</span><span class="ptag">Python</span
+              ><span class="ptag">Computer Vision</span
+              ><span class="ptag">IoT / Embedded Systems</span><span class="ptag">Tensor Flow / PyTorch</span
+              ><span class="ptag">OpenCV</span>
+            </div>
+          </div>
+          <!-- <div class="project-card featured"> -->
+          <div class="project-card">
+            <div class="proj-top">
+              <p class="proj-name">Statistics Analyzer AI-Powered Chatbot — Open iT Asia Inc.</p>
+              <div class="proj-links">
+                <!-- <a
+                  href="//"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub ↗</a
+                > -->
+              </div>
+            </div>
+           <p class="proj-desc">
+              Collaboratively worked on developing an AI Chatbot that can make different kinds of statistical analyses. 
+              Structured and optimized backend data workflows, built
+              automated statistical analysis pipelines using Python through Command Line Inferace (CLI),
+              and executed QA validation processes.
+            </p>
+            <div class="proj-tags">
+              <span class="ptag">Python</span><span class="ptag">MCP Framework</span
+              ><span class="ptag">Statistical Analysis</span              
+              ><span class="ptag">Command Line Interface</span
+              ><span class="ptag">Quality Assurance</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="proj-top">
+              <p class="proj-name">Regional Dengue Hotspot Analysis</p>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/ixahh/Dengue-Data-PH-Regional-Analysis"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub ↗</a
+                >
+              </div>
+            </div>
+            <p class="proj-desc">
+              Multi-year regional study mapping dengue fever hotspots across the
+              Philippines, analyzing the correlation between disease spread and
+              environmental factors — weather, sanitation, and water supply.
+              Full EDA, correlation analysis, and data visualization across
+              regional datasets.
+            </p>
+            <div class="proj-tags">
+              <span class="ptag">Python</span><span class="ptag">Pandas</span
+              ><span class="ptag">Matplotlib</span
+              ><span class="ptag">Seaborn</span><span class="ptag">Google Colab</span
+              ><span class="ptag">EDA</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="proj-top">
+              <p class="proj-name">Buoy — AI Phishing Detector</p>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/SLSU-Turing-Machines/Buoy-Agent"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub ↗</a
+                >
+              </div>
+            </div>
+            <p class="proj-desc">
+              AI-powered web and mobile app that detects phishing attempts in real time.
+              Developed ML models achieving 95% detection accuracy and built the
+              full responsive frontend interface for thousands of users. Contributed
+              both as ML Developer and Front End Developer across the full
+              project lifecycle.
+            </p>
+            <div class="proj-tags">
+              <span class="ptag">Machine Learning</span
+              ><span class="ptag">FlutterFlow</span
+              ><span class="ptag">Python</span><span class="ptag">Firebase</span
+              ><span class="ptag">Cybersecurity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section id="leadership">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: 2.5rem">
+          <p class="section-eyebrow">Leadership &amp; Societies</p>
+          <h2 class="section-title">Beyond the Code</h2>
+        </div>
+        <div class="lead-grid reveal">
+          <div class="lead-card">
+            <p class="lead-role">Vice President</p>
+            <p class="lead-org">SLSU College of Engineering Graduating Batch Committee (CEnGBC)</p>
+            <p class="lead-date">Jan 2026 — Present</p>
+            <ul class="lead-bullets">
+              <li>End-to-end admin management, 100% delivery rate</li>
+              <li>Multi-stakeholder comms: faculty, students, vendors</li>
+            </ul>
+          </div>
+          <div class="lead-card">
+            <p class="lead-role">Vice President — Internal</p>
+            <p class="lead-org">SLSU Society of Computer Engineering Students (SCopES)</p>
+            <p class="lead-date">Sep 2024 — Jul 2025</p>
+            <ul class="lead-bullets">
+              <li>Led 15 officers for 400+ engineering students</li>
+              <li>3 on-campus events; approval time cut by 30%</li>
+            </ul>
+          </div>
+          <div class="lead-card">
+            <p class="lead-role">Events &amp; Logistics Committee</p>
+            <p class="lead-org">DOST Regional Patriots Council - CALABARZON</p>
+            <p class="lead-date">Sep 2024 — Jul 2025</p>
+            <ul class="lead-bullets">
+              <li>Regional events logistics for 300+ attendees</li>
+              <li>Reduced preparation time by 15%</li>
+            </ul>
+          </div>
+          <div class="lead-card">
+            <p class="lead-role">Layout Artist</p>
+            <p class="lead-org">The Spark — SLSU CEn Student Publication</p>
+            <p class="lead-date">Oct 2024 — Jul 2025</p>
+            <ul class="lead-bullets">
+              <li>40+ publications, 1,000+ viewers</li>
+              <li>90% on-time; 15% viewership increase</li>
+            </ul>
+          </div>
+          <div class="lead-card">
+            <p class="lead-role">Secretary</p>
+            <p class="lead-org">SLSU College of Engineering Student Council (CEnSC)</p>
+            <p class="lead-date">Jun 2023 — Jul 2024</p>
+            <ul class="lead-bullets">
+              <li>10+ events, 1,000+ students; 5+ new sponsors</li>
+              <li>Records for 30+ meetings</li>
+            </ul>
+          </div>
+          <div class="lead-card">
+            <p class="lead-role">Student Volunteer</p>
+            <p class="lead-org">SLSU College of Engineering Student Council (CEnSC)</p>
+            <p class="lead-date">Nov 2022 — May 2023</p>
+            <ul class="lead-bullets">
+              <li>Helped organize 2 major events, increased 30% attendance</li>
+              <li>Coordinated logistics ensuring 100% on-time delivery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORG LIFE PHOTO CAROUSEL -->
+    <div class="carousel-section">
+      <div class="carousel-header">
+        <p class="section-eyebrow">Organizational Life</p>
+      </div>
+      <div class="carousel-track-wrap">
+        <div class="carousel-track" id="carousel-track">
+          <!-- Original 8 slots -->
+          <div class="carousel-item">
+            <img src="1.jpg" alt="Organizational photo 1"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="2.jpg" alt="Organizational photo 2"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="3.jpg" alt="Organizational photo 3"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="4.jpg" alt="Organizational photo 4"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="5.jpg" alt="Organizational photo 5"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="6.jpg" alt="Organizational photo 6"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="7.jpg" alt="Organizational photo 7"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="8.jpg" alt="Organizational photo 8"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <!-- Duplicate set for seamless infinite loop -->
+          <div class="carousel-item">
+            <img src="1.jpg" alt="Organizational photo 1"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="2.jpg" alt="Organizational photo 2"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="3.jpg" alt="Organizational photo 3"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="4.jpg" alt="Organizational photo 4"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="5.jpg" alt="Organizational photo 5"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="6.jpg" alt="Organizational photo 6"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="7.jpg" alt="Organizational photo 7"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+          <div class="carousel-item">
+            <img src="8.jpg" alt="Organizational photo 8"
+              onerror="this.parentElement.innerHTML='<div class=\'carousel-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>ADD PHOTO</span></div>'">
+            <div class="carousel-caption">Org Life</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <div class="reveal" style="margin-bottom: 2.5rem">
+        <p class="section-eyebrow">Certifications</p>
+        <h2 class="section-title">Credentials</h2>
+      </div>
+
+      <div class="cert-grid reveal">
+
+        <div class="cert-item">
+          <p class="cert-name">Supervised Machine Learning: Regression & Classification</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">DeepLearning.AI</span>
+            <a href="https://www.coursera.org/account/accomplishments/verify/H1071ZWR27XB" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Google Advanced Data Analytics Professional Certificate</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">Google</span>
+            <a href="https://coursera.org/verify/professional-cert/6LVZ5KVTDKQM" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Introduction to Data Science Specialization</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">IBM</span>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/KYU3ZBBXYOD6" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Foundations of Prompt Engineering</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">Amazon Web Services (AWS)</span>
+            <!-- <a href="YOUR_LINK_HERE" class="cert-link" target="_blank">↗</a> -->
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Google Data Analytics Professional Certificate</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">Google</span>
+            <a href="https://www.coursera.org/account/accomplishments/professional-cert/FRAGS3BNLLW4" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Power BI Essential Training</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">LinkedIn Learning</span>
+            <a href="https://www.linkedin.com/learning/certificates/9095893be16ddd3c864d833315a8404e6e5d8bc65c3953fe7a81ae04238689d8?trk=share_certificate" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Data Visualization with Python</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">Cognitive Class</span>
+            <a href="https://courses.cognitiveclass.ai/certificates/bca5d9d3d3af45899591b466a36f2f5c" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Telling Stories with Data</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">LinkedIn Learning</span>
+            <a href="https://www.linkedin.com/learning/certificates/db91624c537869ff79a9af11c402ada07fb57cb37c94a2780ad443da576a07dd" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Visualizing Advanced Charts and Graphs</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">LinkedIn Learning</span>
+            <a href="https://www.linkedin.com/learning/certificates/3d8975f024123f8470d2f7fbd155c8ad574f3ebb3fb3ddd3e66807beb497f95a" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Programming for Everybody (Python)</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">University of Michigan</span>
+            <a href="https://coursera.org/share/69777efd000f8f7268437a0581e9f3a0" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Python 101 for Data Science</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">Cognitive Class</span>
+            <a href="https://courses.cognitiveclass.ai/certificates/636bea4c4e0349ee951dfa6f48b85a7f" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Introduction to SQL</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">DataCamp</span>
+            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/06c5e3bb266f7bb9267e582fd472ac33c89170c9?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Java Programming Course</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">GeeksforGeeks</span>
+            <a href="https://media.geeksforgeeks.org/courses/certificates/37027329b467483473403597d893d2f1.pdf" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Excel Skills for Business Specialization</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">Macquarie University</span>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/6A9KTNANNJGE" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Foundations of Project Management</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">Google</span>
+            <a href="https://www.coursera.org/account/accomplishments/records/Z3DWW99NQY8B" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Project Initiation: Starting a Successful Project</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">Google</span>
+            <a href="https://www.coursera.org/account/accomplishments/records/L6JLUEW6UL4K" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Data-Driven Decision Making for the Real World</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">LinkedIn Learning</span>
+            <a href="https://www.linkedin.com/learning/certificates/c9d83842ca80ad66c81f2710d6330805a81dce984094109df041d65c8ad212e5?trk=share_certificate4" class="cert-link" target="_blank">↗</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <p class="cert-name">Basic Occupational Safety and Health (BOSH)</p>
+          <div class="cert-meta">
+            <span class="cert-issuer">FRREAL Occupational Health and Safety Training Services</span>
+            <!-- <a href="YOUR_LINK_HERE" class="cert-link" target="_blank">↗</a> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="reveal">
+            <p class="section-eyebrow">Contact</p>
+            <h2 class="contact-heading">
+              Let's Work<br /><span class="accent">Together.</span>
+            </h2>
+            <p class="contact-sub">
+              Open to internships, collaborations, and entry-level opportunities
+              in data science, machine learning, and software engineering.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:angelicahhugo@gmail.com" class="clink">
+                <div class="clink-left">
+                  <span class="clink-type">EMAIL</span
+                  ><span class="clink-val">angelicahhugo@gmail.com</span>
+                </div>
+                <span class="clink-arrow">↗</span>
+              </a>
+              <a href="tel:+639946948364" class="clink">
+                <div class="clink-left">
+                  <span class="clink-type">PHONE</span
+                  ><span class="clink-val">+63 994 694 8364</span>
+                </div>
+                <span class="clink-arrow">↗</span>
+              </a>
+              <a
+                href="https://linkedin.com/in/angelicahhugo"
+                target="_blank"
+                rel="noopener"
+                class="clink"
+              >
+                <div class="clink-left">
+                  <span class="clink-type">LINKEDIN</span
+                  ><span class="clink-val">angelicahhugo</span>
+                </div>
+                <span class="clink-arrow">↗</span>
+              </a>
+              <a
+                href="https://github.com/ixahh"
+                target="_blank"
+                rel="noopener"
+                class="clink"
+              >
+                <div class="clink-left">
+                  <span class="clink-type">GITHUB</span
+                  ><span class="clink-val">github.com/ixahh</span>
+                </div>
+                <span class="clink-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <div class="availability-box">
+              <div class="avail-status">
+                <span class="avail-dot"></span>
+                <span class="avail-text">Available Now</span>
+              </div>
+              <p class="avail-title">Open to New Opportunities</p>
+              <p class="avail-desc">
+                Looking for roles in data analystics, data science, ML
+                engineering, and software development. Available for freelance,
+                part-time, or full-time positions.
+              </p>
+              <div class="avail-tags">
+                <span class="atag">Data Analytics</span>
+                <span class="atag">Data Science</span>
+                <span class="atag">ML Engineering</span>
+                <span class="atag">Software Dev</span>
+                <span class="atag">Remote / Hybrid</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          © 2026 Angelica H. Hugo · Designed &amp; built with HTML / CSS / JS
+        </p>
+      </div>
+    </footer>
+   <script src="script.js"></script> 
+  </body>
+</html>
